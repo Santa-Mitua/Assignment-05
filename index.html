@@ -15,7 +15,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="bg-gray-100">
     <!-- Navbar Section -->
     <header class="bg-white shadow-md">
       <div
@@ -34,21 +34,21 @@
         <!-- Right Side (Heart, Coins, Copy) -->
         <div class="flex items-center gap-4">
           <!-- Heart -->
-          <button class="relative">
-            <img src="assets/heart.png" alt="favorites" class="w-6 h-6" />
+          <button class="flex">
             <span
               id="heart-count"
-              class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full px-1"
+              class="flex items-center gap-2 color: rgba(0, 0, 0, 1); font-family: Inter; font-size: 18px; font-weight: 900; line-height: 24px; font-bold rounded-full px-2 py-1 p-4"
               >0</span
             >
+            <img src="assets/heart.png" alt="favorites" class="w-6 h-6" />
           </button>
 
           <!-- Coin -->
           <div
             class="flex items-center gap-1 bg-yellow-100 px-2 py-1 rounded-full"
           >
-            <img src="assets/coin.png" alt="coin" class="w-5 h-5" />
             <span id="coin-count" class="font-semibold">100</span>
+            <img src="assets/coin.png" alt="coin" class="w-5 h-5" />
           </div>
 
           <!-- Copy -->
@@ -61,5 +61,30 @@
         </div>
       </div>
     </header>
+    <main>
+      <!--Banner section start-->
+      <section id="banner">
+        <!-- Banner Section -->
+        <section class="bg-green-900 p-5px py-8">
+          <div
+            class="container mx-auto flex flex-col items-center justify-center text-center space-y-3"
+          >
+            <!-- Logo -->
+            <img src="./assets/logo.png" alt="BD Logo" class="w-16 h-16" />
+
+            <!-- Title -->
+            <h1 class="text-2xl md:text-3xl font-bold text-white">
+              Emergency Service Directory
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-sm md:text-base text-gray-200">
+              Government Emergency Services at Your Fingertip – A Project by
+              Government of the People’s Republic of Bangladesh
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
